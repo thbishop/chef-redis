@@ -19,6 +19,7 @@ The Redis cookbook has been tested on Ubuntu 10.04, 11.04, 11.10, 12.04, Debian 
 
 ## Installation:
 * `['redis']['install_type']` - Install the Package by default. [ package, source ]
+* `['redis']['use_epel']` - Install the package from the EPEL repository by default (only applicable to yum). [ true, false ]
 * `['redis']['source']['sha']` - The sha256 checksum of the source tarball.
 * `['redis']['source']['url']` - The url to the source tarball.
 * `['redis']['source']['version']` - The version of Redis to install.

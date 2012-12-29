@@ -6,7 +6,7 @@ case node['platform_family']
 when "debian"
   pkg = "redis-server"
 when "rhel", "fedora"
-  include_recipe "yum::epel"
+  include_recipe "yum::epel" if node['redis']['use_epel']
   pkg = "redis"
 else
   pkg = "redis"
